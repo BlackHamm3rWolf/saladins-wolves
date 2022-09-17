@@ -1,3 +1,3 @@
-# Iron-Wolves-Ro
+# Iron-Wolves
 
-We are a small clan of Carpathian wolves, veterans, with a great passion for Destiny 2 and its universe.
+We are a pack of veteran wolves with a great passion for Destiny 2 and its universe.
