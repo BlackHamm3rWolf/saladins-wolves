@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,7 +7,38 @@
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Sora', sans-serif;
     font-size: 16px;
     line-height: 1.4;
+}
+
+.navbar-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 5rem;
+    background-color: #0B0B10;
+}
+
+.navbar-logo img {
+    width: 100px;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+.list-item a {
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fdfdfd;
 }
