@@ -118,3 +118,124 @@ header {
     border-radius: 0.3rem;
     box-shadow: 0px 0px 8px -3px #000000;
 }
+
+.main-container {
+    display: flex;
+    flex-flow: column;
+    padding: 1.5rem 5rem;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.features-title {
+    margin: 2rem auto 3rem auto;
+}
+
+.founder-name {
+    color: #6680FF;
+}
+
+.features-container {
+    padding: 1rem 2rem 2rem 2rem;
+    background-image: linear-gradient(to right, rgba(11, 11, 16, 0.8), rgba(11, 11, 16, 0.5)), url(images/features-background.jpg);
+    background-size: cover;
+    background-position: center;
+    outline: 1px solid #5865F2;
+    border-radius: 0.3rem;
+}
+
+.features-description {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: #6680FF;
+}
+
+.features-list {
+    padding-left: 1rem;
+}
+
+.rules-title {
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.rules-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.server-regulations {
+    flex: 1;
+    padding: 2rem;
+    background-image: linear-gradient(to right, rgba(11, 11, 16, 0.8), rgba(11, 11, 16, 0.5)), url(images/server-regulations-background.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.3rem;
+    outline: 1px solid #5865F2;
+}
+
+.server-regulations-title {
+    margin: 0.5rem auto 0.8rem auto;
+    text-align: center;
+    color: #6680FF;
+}
+
+.fa-discord {
+    display: block;
+    margin: auto auto 1rem auto;
+    color: #5865F2;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.server-regulations-olist {
+    display: flex;
+    flex-flow: column;
+    gap: 0.7rem;
+    padding: 1rem;
+}
+
+.server-regulations-ulist {
+    display: flex;
+    flex-flow: column;
+    gap: 0.7rem;
+    padding: 1rem;
+}
+
+.clan-regulations {
+    height: 100%;
+    flex: 1;
+    padding: 2rem;
+    background-image: linear-gradient(to right, rgba(11, 11, 16, 0.8), rgba(11, 11, 16, 0.5)), url(images/clan-regulations-background.jpg);
+    background-size: cover;
+    background-position: center;
+    outline: 1px solid #5865F2;
+    border-radius: 0.3rem;
+}
+
+.clan-regulations-title {
+    margin: 0.5rem auto 0.8rem auto;
+    text-align: center;
+    color: #6680FF;
+}
+
+.fa-wolf-pack-battalion {
+    display: block;
+    margin: auto auto 1rem auto;
+    color: #5865F2;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.clan-regulations-olist {
+    display: flex;
+    flex-flow: column;
+    gap: 0.7rem;
+    padding: 1rem;
+}
+
+.clan-regulations-sublist {
+    display: flex;
+    flex-flow: column;
+    gap: 0.7rem;
+    margin-top: 0.7rem;
+    padding-left: 1.2rem;
+    list-style-type: upper-latin;
+}
