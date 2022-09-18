@@ -43,6 +43,10 @@ body {
     color: inherit;
 }
 
+.list-item a:hover {
+    color: #6680FF;
+}
+
 .hero-container {
     display: flex;
     justify-content: space-between;
@@ -90,7 +94,6 @@ body {
     color: #6680FF;
     outline: 1px solid #5865F2;
     border-radius: 0.3rem;
-    transition: 0.7s;
 }
 
 .hero-button:hover {
