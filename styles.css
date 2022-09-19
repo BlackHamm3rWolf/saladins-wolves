@@ -15,6 +15,13 @@ body {
     color: #fdfdfd;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 400;
+}
+
 header {
     height: 100vh;
     background-image: linear-gradient(to right, rgba(18, 23, 28, 0.85), rgba(18, 23, 28, 0.85)), url(images/hero-wallpaper.jpg);
@@ -27,11 +34,6 @@ header {
         height: 100%;
         padding-bottom: 2rem;
     }
-}
-
-@font-face {
-    font-family: 'Sora';
-    src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 }
 
 .navbar-container {
@@ -124,7 +126,6 @@ header {
 @media (max-width: 650px) {
     .hero-title {
         text-align: center;
-        font-family: 'Sora' !important;
         font-size: 1.5rem;
     }
 }
@@ -197,7 +198,6 @@ header {
 }
 
 .features-title {
-    font-family: 'Sora' !important;
     margin: 2rem auto 3rem auto;
 }
 
@@ -221,7 +221,6 @@ header {
 }
 
 .features-description {
-    font-family: 'Sora' !important;
     margin-bottom: 1rem;
     margin-top: 1rem;
     color: #6680FF;
@@ -235,7 +234,6 @@ header {
 }
 
 .rules-title h2 {
-    font-family: 'Sora' !important;
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
     grid-template-rows: 27px 0;
@@ -300,7 +298,6 @@ header {
 }
 
 .server-regulations-title {
-    font-family: 'Sora' !important;
     margin: 0.5rem auto 0.8rem auto;
     text-align: center;
     color: #6680FF;
@@ -345,7 +342,6 @@ header {
 }
 
 .clan-regulations-title {
-    font-family: 'Sora' !important;
     margin: 0.5rem auto 0.8rem auto;
     text-align: center;
     color: #6680FF;
