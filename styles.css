@@ -17,7 +17,7 @@ body {
 
 header {
     height: 100vh;
-    background-image: linear-gradient(to right, rgba(18, 23, 28, 0.8), rgba(18, 23, 28, 0.8)), url(images/hero-wallpaper.jpg);
+    background-image: linear-gradient(to right, rgba(18, 23, 28, 0.85), rgba(18, 23, 28, 0.85)), url(images/hero-wallpaper.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -123,6 +123,7 @@ header {
 
 @media (max-width: 650px) {
     .hero-title {
+        text-align: center;
         font-family: 'Sora' !important;
         font-size: 1.5rem;
     }
@@ -206,7 +207,7 @@ header {
 
 .features-container {
     padding: 1rem 2rem 2rem 2rem;
-    background-image: linear-gradient(to right, rgba(18, 23, 28, 0.8), rgba(18, 23, 28, 0.8)), url(images/features-background.jpg);
+    background-image: linear-gradient(to right, rgba(18, 23, 28, 0.85), rgba(18, 23, 28, 0.85)), url(images/features-background.jpg);
     background-size: cover;
     background-position: center;
     box-shadow: 0px 0px 1px 1px rgba(88, 101, 242, 0.6);
@@ -285,7 +286,7 @@ header {
 .server-regulations {
     flex: 1;
     padding: 2rem;
-    background-image: linear-gradient(to right, rgba(18, 23, 28, 0.8), rgba(18, 23, 28, 0.8)), url(images/server-regulations-background.jpg);
+    background-image: linear-gradient(to right, rgba(18, 23, 28, 0.85), rgba(18, 23, 28, 0.85)), url(images/server-regulations-background.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 0.3rem;
