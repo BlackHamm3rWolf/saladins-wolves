@@ -10,13 +10,13 @@ body {
     font-family: 'Sora', sans-serif;
     font-size: 16px;
     line-height: 1.4;
-    background-color: #0B0B10;
+    background-color: #12171c;
     color: #fdfdfd;
 }
 
 header {
     height: 100vh;
-    background-image: linear-gradient(to right, rgba(11, 11, 16, 0.8), rgba(11, 11, 16, 0.8)), url(images/hero-wallpaper.jpg);
+    background-image: linear-gradient(to right, rgba(18, 23, 28, 0.8), rgba(18, 23, 28, 0.8)), url(images/hero-wallpaper.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -136,7 +136,7 @@ header {
 
 .features-container {
     padding: 1rem 2rem 2rem 2rem;
-    background-image: linear-gradient(to right, rgba(11, 11, 16, 0.8), rgba(11, 11, 16, 0.5)), url(images/features-background.jpg);
+    background-image: linear-gradient(to right, rgba(18, 23, 28, 0.8), rgba(18, 23, 28, 0.8)), url(images/features-background.jpg);
     background-size: cover;
     background-position: center;
     outline: 1px solid #5865F2;
@@ -166,7 +166,7 @@ header {
 .server-regulations {
     flex: 1;
     padding: 2rem;
-    background-image: linear-gradient(to right, rgba(11, 11, 16, 0.8), rgba(11, 11, 16, 0.5)), url(images/server-regulations-background.jpg);
+    background-image: linear-gradient(to right, rgba(18, 23, 28, 0.8), rgba(18, 23, 28, 0.8)), url(images/server-regulations-background.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 0.3rem;
@@ -204,7 +204,7 @@ header {
     height: 100%;
     flex: 1;
     padding: 2rem;
-    background-image: linear-gradient(to right, rgba(11, 11, 16, 0.8), rgba(11, 11, 16, 0.5)), url(images/clan-regulations-background.jpg);
+    background-image: linear-gradient(to right, rgba(11, 11, 16, 0.8), rgba(11, 11, 16, 0.8)), url(images/clan-regulations-background.jpg);
     background-size: cover;
     background-position: center;
     outline: 1px solid #5865F2;
@@ -238,4 +238,26 @@ header {
     margin-top: 0.7rem;
     padding-left: 1.2rem;
     list-style-type: upper-latin;
+}
+
+.footer-container {
+    background-color: #14191e;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.icons-container a {
+    color: #fdfdfd;
+}
+
+.icons-container a:hover {
+    color: #5865F2;
 }
