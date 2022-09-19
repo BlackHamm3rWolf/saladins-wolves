@@ -153,9 +153,26 @@ header {
     padding-left: 1rem;
 }
 
-.rules-title {
-    margin: 3rem auto;
+.rules-title h2 {
+    font-weight: 200;
+    text-transform: uppercase;
+    margin: 4rem auto 3rem auto;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.rules-title h2:after,
+.rules-title h2:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #fdfdfd;
+    border-top: 1px solid #fdfdfd;
+    height: 5px;
+    background-color: #14191e;
 }
 
 .rules-container {
