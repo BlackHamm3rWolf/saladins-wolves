@@ -1,5 +1,5 @@
 function toggleMobileMenu() {
-    let icon = document.querySelector('.menu-icon')
+    let icon = document.querySelector('.mobile-menu-icon')
     let menu = document.querySelector('.mobile-list')
     menu.classList.toggle('open');
     if (menu.classList.contains('open')) {
