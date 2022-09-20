@@ -4,6 +4,17 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'Sora';
+    src: url(assets/sora-v11-latin-regular.woff2);
+}
+
+@font-face {
+    font-family: 'Sora';
+    src: url(assets/sora-v11-latin-700.woff2);
+    font-weight: bold;
+}
+
 body {
     font-family: 'Sora', sans-serif;
     font-weight: 400;
@@ -54,6 +65,7 @@ header {
 
 .navbar-logo img {
     width: 100px;
+    height: 100px;
 }
 
 .navbar-list {
@@ -317,7 +329,6 @@ header {
     align-items: center;
     margin: 4rem auto 3rem auto;
     text-align: center;
-    font-weight: 200;
     text-transform: uppercase;
 }
 
