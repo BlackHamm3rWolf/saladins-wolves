@@ -119,6 +119,7 @@ header {
     padding: 1.5rem;
     gap: 0.7rem;
     background-color: #14191e;
+    border-bottom: 0.5px solid #fdfdfd;
     transition: 0.5s all;
 }
 
