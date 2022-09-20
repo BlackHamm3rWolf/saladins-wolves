@@ -24,7 +24,7 @@ h4 {
 
 header {
     height: 100vh;
-    background-image: linear-gradient(to right, rgba(18, 23, 28, 0.85), rgba(18, 23, 28, 0.85)), url(images/hero-wallpaper.jpg);
+    background-image: linear-gradient(to right, rgba(18, 23, 28, 0.85), rgba(18, 23, 28, 0.85)), url(images/hero-wallpaper.webp);
     background-size: cover;
     background-position: center;
 }
@@ -251,7 +251,8 @@ header {
     }
 }
 
-.hero-gif img {
+.hero-gif video {
+    object-fit: cover;
     width: 100%;
     height: 100%;
     border-radius: 0.3rem;
@@ -282,7 +283,7 @@ header {
 
 .features-container {
     padding: 1rem 2rem 2rem 2rem;
-    background-image: linear-gradient(to right, rgba(18, 23, 28, 0.85), rgba(18, 23, 28, 0.85)), url(images/features-background.jpg);
+    background-image: linear-gradient(to right, rgba(18, 23, 28, 0.85), rgba(18, 23, 28, 0.85)), url(images/features-background.webp);
     background-size: cover;
     background-position: center;
     box-shadow: 0px 0px 1px 2px rgba(88, 101, 242, 0.6);
@@ -359,7 +360,7 @@ header {
 .server-regulations {
     flex: 1;
     padding: 2rem;
-    background-image: linear-gradient(to right, rgba(18, 23, 28, 0.85), rgba(18, 23, 28, 0.85)), url(images/server-regulations-background.jpg);
+    background-image: linear-gradient(to right, rgba(18, 23, 28, 0.85), rgba(18, 23, 28, 0.85)), url(images/server-regulations-background.webp);
     background-size: cover;
     background-position: center;
     border-radius: 0.3rem;
@@ -403,7 +404,7 @@ header {
     height: 100%;
     flex: 1;
     padding: 2rem;
-    background-image: linear-gradient(to right, rgba(11, 11, 16, 0.8), rgba(11, 11, 16, 0.8)), url(images/clan-regulations-background.jpg);
+    background-image: linear-gradient(to right, rgba(11, 11, 16, 0.8), rgba(11, 11, 16, 0.8)), url(images/clan-regulations-background.webp);
     background-size: cover;
     background-position: center;
     box-shadow: 0px 0px 1px 2px rgba(88, 101, 242, 0.6);
