@@ -7,14 +7,12 @@
 @font-face {
     font-family: 'Sora';
     src: url(assets/sora-v11-latin-regular.woff2);
-    font-display: swap;
 }
 
 @font-face {
     font-family: 'Sora';
     src: url(assets/sora-v11-latin-700.woff2);
     font-weight: bold;
-    font-display: swap;
 }
 
 body {
@@ -186,7 +184,8 @@ header {
 }
 
 .hero-info {
-    width: 50ch;
+    width: 600px;
+    height: auto;
     flex: 1;
     display: flex;
     flex-flow: column;
