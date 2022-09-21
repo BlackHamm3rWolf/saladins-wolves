@@ -1,10 +1,13 @@
 function toggleMobileMenu() {
-    let icon = document.querySelector('.mobile-menu-icon')
-    let menu = document.querySelector('.mobile-list')
+    let iconOpen = document.querySelector('.menu-icon-open');
+    let iconClose = document.querySelector('.menu-icon-close');
+    let menu = document.querySelector('.mobile-list');
     menu.classList.toggle('open');
     if (menu.classList.contains('open')) {
-        icon.style.color = '#5865F2';
+        iconOpen.style.display = 'none';
+        iconClose.style.display = 'block';
     } else {
-        icon.style.color = '#fdfdfd'
+        iconOpen.style.display = 'block';
+        iconClose.style.display = 'none';
     }
 }
