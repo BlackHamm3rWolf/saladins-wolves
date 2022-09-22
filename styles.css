@@ -21,9 +21,9 @@ body {
     font-style: normal;
     font-size: 16px;
     line-height: 1.4;
-    background-color: #12171c;
-    text-shadow: 1px 1px 3px rgba(11, 11, 16, 0.5);
-    color: #fdfdfd;
+    background-color: #14191e;
+    color: #efefef;
+    text-shadow: 0px 0px 5px rgba(18, 23, 28, 0.24);
 }
 
 h1,
@@ -35,7 +35,7 @@ h4 {
 
 header {
     height: 100vh;
-    background-image: linear-gradient(to right, rgba(18, 23, 28, 0.85), rgba(18, 23, 28, 0.85)), url(images/hero-wallpaper.webp);
+    background-image: linear-gradient(to right, rgba(10, 15, 17, 0.85), rgba(10, 15, 17, 0.85)), url(images/hero-wallpaper2.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -44,6 +44,12 @@ header {
     header {
         height: 100%;
         padding-bottom: 2rem;
+    }
+}
+
+@media (max-width: 650px) {
+    header {
+        padding-bottom: 1rem;
     }
 }
 
@@ -117,7 +123,7 @@ header {
     padding: 1.5rem;
     gap: 0.7rem;
     background-color: #14191e;
-    border-bottom: 0.5px solid #fdfdfd;
+    border-bottom: 0.5px solid #efefef;
     transition: 0.5s all;
 }
 
@@ -140,16 +146,16 @@ header {
 
 .mobile-list-item a {
     font-size: 1.1rem;
-    color: #fdfdfd;
     text-decoration: none;
     text-transform: uppercase;
-    text-shadow: 1px 1px 3px rgba(11, 11, 16, 0.5);
+    color: #efefef;
+    text-shadow: 0px 0px 5px rgba(18, 23, 28, 0.24);
 }
 
 .mobile-menu-icon {
     display: none;
     cursor: pointer;
-    text-shadow: 1px 1px 3px rgba(11, 11, 16, 0.5);
+    text-shadow: 0px 0px 5px rgba(18, 23, 28, 0.24);
     transition: 0.3s;
 }
 
@@ -212,8 +218,10 @@ header {
 
 @media (max-width: 650px) {
     .hero-title {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 }
 
@@ -230,16 +238,15 @@ header {
     .clans-container {
         text-align: center;
         flex-flow: column;
-        gap: 0.6rem;
+        gap: 0.3rem;
     }
 }
 
 .clans-container>.clan {
     padding: 0.4rem 0.7rem;
-    color: #fdfdfd;
-    background-color: rgba(11, 11, 16, 0.5);
+    color: #efefef;
+    background-color: #14191e;
     border-radius: 0.3rem;
-    box-shadow: 0px 0px 1px 1px rgba(88, 101, 242, 0.6);
 }
 
 .hero-button {
@@ -248,16 +255,13 @@ header {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    color: #6680FF;
-    background-color: rgba(11, 11, 16, 0.5);
+    color: #efefef;
+    background-color: #4c57d1;
     border-radius: 0.3rem;
-    box-shadow: 0px 0px 1px 1px rgba(88, 101, 242, 0.6);
+    box-shadow: 0px 0px 8px 0px rgba(5, 5, 5, 0.3);
 }
 
 .hero-button:hover {
-    background-color: rgba(88, 101, 242, 0.5);
-    color: #fdfdfd;
-    box-shadow: 0px 0px 1px 1px rgba(11, 11, 16, 0.6);
     cursor: pointer;
 }
 
@@ -277,14 +281,14 @@ video {
     width: 100%;
     height: 100%;
     border-radius: 0.3rem;
-    box-shadow: 0px 0px 8px -3px rgba(11, 11, 16, 0.8);
+    box-shadow: 0px 0px 8px 0px rgba(5, 5, 5, 0.3);
 }
 
 .main-container {
     max-width: 1300px;
     display: flex;
     flex-flow: column;
-    margin: auto;
+    margin: auto auto 2rem auto;
     padding: 1.5rem 2rem;
 }
 
@@ -294,8 +298,14 @@ video {
     }
 }
 
+.discord-widget {
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
 .features-title {
-    margin: 2rem auto 3rem auto;
+    margin: 4rem auto 2rem auto;
 }
 
 .founder-name {
@@ -304,10 +314,10 @@ video {
 
 .features-container {
     padding: 1rem 2rem 2rem 2rem;
-    background-image: linear-gradient(to right, rgba(18, 23, 28, 0.85), rgba(18, 23, 28, 0.85)), url(images/features-background.webp);
+    background-image: linear-gradient(to right, rgba(9, 23, 28, 0.85), rgba(18, 23, 28, 0.85)), url(images/features-background.webp);
     background-size: cover;
     background-position: center;
-    box-shadow: 0px 0px 1px 2px rgba(88, 101, 242, 0.6);
+    box-shadow: 0px 0px 8px 0px rgba(5, 5, 5, 0.3);
     border-radius: 0.3rem;
 }
 
@@ -331,39 +341,8 @@ video {
 }
 
 .rules-title h2 {
-    display: grid;
-    grid-template-columns: 1fr max-content 1fr;
-    grid-template-rows: 27px 0;
-    grid-gap: 20px;
-    align-items: center;
-    margin: 4rem auto 3rem auto;
+    margin: 4rem auto 2rem auto;
     text-align: center;
-    text-transform: uppercase;
-}
-
-@media (max-width: 650px) {
-    .rules-title h2 {
-        display: block;
-        margin: 3rem auto 2rem auto;
-    }
-}
-
-.rules-title h2:after,
-.rules-title h2:before {
-    content: " ";
-    display: block;
-    height: 5px;
-    border-bottom: 1px solid rgba(88, 101, 242, 0.7);
-    border-top: 1px solid rgba(88, 101, 242, 0.6);
-    background-color: #14191e;
-}
-
-@media (max-width: 650px) {
-
-    .rules-title h2:after,
-    .rules-title h2:before {
-        display: none;
-    }
 }
 
 .rules-container {
@@ -384,7 +363,7 @@ video {
     background-size: cover;
     background-position: center;
     border-radius: 0.3rem;
-    box-shadow: 0px 0px 1px 2px rgba(88, 101, 242, 0.6);
+    box-shadow: 0px 0px 8px 0px rgba(5, 5, 5, 0.3);
 }
 
 @media (max-width: 650px) {
@@ -423,10 +402,10 @@ video {
     height: 100%;
     flex: 1;
     padding: 2rem;
-    background-image: linear-gradient(to right, rgba(11, 11, 16, 0.8), rgba(11, 11, 16, 0.8)), url(images/clan-regulations-background.webp);
+    background-image: linear-gradient(to right, rgba(18, 23, 28, 0.85), rgba(18, 23, 28, 0.85)), url(images/clan-regulations-background.webp);
     background-size: cover;
     background-position: center;
-    box-shadow: 0px 0px 1px 2px rgba(88, 101, 242, 0.6);
+    box-shadow: 0px 0px 8px 0px rgba(5, 5, 5, 0.3);
     border-radius: 0.3rem;
 }
 
@@ -465,11 +444,11 @@ video {
 }
 
 .footer-container {
-    background-color: #14191e;
     margin-top: 1rem;
-    text-align: center;
     padding-top: 2rem;
     padding-bottom: 1.5rem;
+    text-align: center;
+    border-top: 0.5px solid #efefef;
 }
 
 @media (max-width: 650px) {
@@ -488,7 +467,7 @@ video {
 }
 
 .icons-container a {
-    text-shadow: 1px 1px 2px rgba(11, 11, 16, 0.6);
+    text-shadow: 0px 0px 5px rgba(18, 23, 28, 0.24);
 }
 
 .icons-container a:hover {
