@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/ironwol1/public_html
-    - /bin/cp -r * $DEPLOYPATH
