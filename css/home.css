@@ -1,34 +1,6 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-@font-face {
-    font-family: 'Sora';
-    src: url(assets/sora-v11-latin-regular.woff2);
-}
-
-@font-face {
-    font-family: 'Sora';
-    src: url(assets/sora-v11-latin-700.woff2);
-    font-weight: bold;
-}
-
-body {
-    font-family: 'Sora', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 1.4;
-    background-color: #14191e;
-    color: #efefef;
-    text-shadow: 0px 0px 5px rgba(18, 23, 28, 0.24);
-}
-
 header {
     height: 100vh;
-    background-image: linear-gradient(to right, rgba(10, 15, 17, 0.85), rgba(10, 15, 17, 0.85)), url(images/hero-wallpaper.webp);
+    background-image: linear-gradient(to right, rgba(10, 15, 17, 0.85), rgba(10, 15, 17, 0.85)), url(../images/hero-wallpaper.webp);
     background-size: cover;
     background-position: center;
 }
@@ -41,13 +13,6 @@ header {
 }
 
 /* Titles and headers */
-
-h1,
-h2,
-h3,
-h4 {
-    font-weight: 400;
-}
 
 .hero-title {
     font-size: 2.4rem;
@@ -75,123 +40,6 @@ h4 {
     margin: 0.5rem auto 0.8rem auto;
     text-align: center;
     color: #6680FF;
-}
-
-/* Desktop navbar */
-
-.navbar-container {
-    max-width: 1300px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-    padding: 1.5rem 2rem;
-}
-
-@media (max-width: 900px) {
-    .navbar-container {
-        flex-flow: column;
-        gap: 1rem;
-    }
-}
-
-.navbar-logo img {
-    width: 100px;
-    height: 100px;
-}
-
-.navbar-list {
-    display: flex;
-    gap: 2rem;
-    list-style-type: none;
-}
-
-@media (max-width: 900px) {
-    .navbar-list {
-        display: none;
-        flex-flow: column;
-        align-items: center;
-    }
-}
-
-.list-item a {
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 0.9rem;
-    color: inherit;
-}
-
-.list-item:hover {
-    transform: scale(1.2);
-    transition: 0.3s;
-}
-
-.list-item a:hover {
-    color: #6680FF;
-    transition: 0.3s;
-}
-
-/* Mobile navbar */
-
-.mobile-navbar {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.mobile-list,
-.mobile-list.open {
-    width: 100%;
-    height: 140px;
-    position: absolute;
-    top: -2000px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    gap: 0.7rem;
-    background-color: #14191e;
-    border-bottom: 0.5px solid #efefef;
-    transition: 0.5s all;
-}
-
-.mobile-list.open {
-    top: 0;
-}
-
-.mobile-list-row1,
-.mobile-list-row2 {
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-
-.mobile-list a {
-    font-size: 1.1rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #efefef;
-    text-shadow: 0px 0px 5px rgba(18, 23, 28, 0.24);
-}
-
-.mobile-menu-icon {
-    display: none;
-    cursor: pointer;
-}
-
-@media (max-width: 900px) {
-    .mobile-menu-icon {
-        display: flex;
-        justify-content: center;
-    }
-}
-
-.menu-icon-open {
-    display: block;
-}
-
-.menu-icon-close {
-    display: none;
 }
 
 /* Hero section */
@@ -321,7 +169,7 @@ video {
 
 .features-container {
     padding: 0.5rem 2rem 1.5rem 2rem;
-    background-image: linear-gradient(to right, rgba(9, 23, 28, 0.85), rgba(18, 23, 28, 0.85)), url(images/features-background.webp);
+    background-image: linear-gradient(to right, rgba(9, 23, 28, 0.85), rgba(18, 23, 28, 0.85)), url(../images/features-background.webp);
     background-size: cover;
     background-position: center;
     box-shadow: 0px 0px 8px 0px rgba(5, 5, 5, 0.3);
@@ -363,7 +211,7 @@ video {
     height: 100%;
     flex: 1;
     padding: 2rem;
-    background-image: linear-gradient(to right, rgba(18, 23, 28, 0.85), rgba(18, 23, 28, 0.85)), url(images/server-regulations-background.webp);
+    background-image: linear-gradient(to right, rgba(18, 23, 28, 0.85), rgba(18, 23, 28, 0.85)), url(../images/server-regulations-background.webp);
     background-size: cover;
     background-position: center;
     border-radius: 0.3rem;
@@ -371,7 +219,7 @@ video {
 }
 
 .clan-regulations {
-    background-image: linear-gradient(to right, rgba(18, 23, 28, 0.85), rgba(18, 23, 28, 0.85)), url(images/clan-regulations-background.webp);
+    background-image: linear-gradient(to right, rgba(18, 23, 28, 0.85), rgba(18, 23, 28, 0.85)), url(../images/clan-regulations-background.webp);
 }
 
 @media (max-width: 650px) {
