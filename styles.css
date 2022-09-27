@@ -26,13 +26,6 @@ body {
     text-shadow: 0px 0px 5px rgba(18, 23, 28, 0.24);
 }
 
-h1,
-h2,
-h3,
-h4 {
-    font-weight: 400;
-}
-
 header {
     height: 100vh;
     background-image: linear-gradient(to right, rgba(10, 15, 17, 0.85), rgba(10, 15, 17, 0.85)), url(images/hero-wallpaper.webp);
@@ -43,15 +36,48 @@ header {
 @media (max-width: 1300px) {
     header {
         height: 100%;
-        padding-bottom: 2rem;
-    }
-}
-
-@media (max-width: 650px) {
-    header {
         padding-bottom: 1rem;
     }
 }
+
+/* Titles and headers */
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 400;
+}
+
+.hero-title {
+    font-size: 2.4rem;
+}
+
+@media (max-width: 650px) {
+    .hero-title {
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+
+.features-title,
+.rules-title {
+    margin: 4rem auto 2rem auto;
+}
+
+.rules-title {
+    text-align: center;
+}
+
+.server-regulations-title,
+.clan-regulations-title {
+    margin: 0.5rem auto 0.8rem auto;
+    text-align: center;
+    color: #6680FF;
+}
+
+/* Desktop navbar */
 
 .navbar-container {
     max-width: 1300px;
@@ -105,6 +131,8 @@ header {
     transition: 0.3s;
 }
 
+/* Mobile navbar */
+
 .mobile-navbar {
     display: flex;
     flex-flow: column;
@@ -112,7 +140,8 @@ header {
     gap: 1rem;
 }
 
-.mobile-list {
+.mobile-list,
+.mobile-list.open {
     width: 100%;
     height: 140px;
     position: absolute;
@@ -120,7 +149,6 @@ header {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    padding: 1.5rem;
     gap: 0.7rem;
     background-color: #14191e;
     border-bottom: 0.5px solid #efefef;
@@ -131,20 +159,14 @@ header {
     top: 0;
 }
 
-.mobile-list-row1 {
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-
-
+.mobile-list-row1,
 .mobile-list-row2 {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
 }
 
-.mobile-list-item a {
+.mobile-list a {
     font-size: 1.1rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -155,8 +177,6 @@ header {
 .mobile-menu-icon {
     display: none;
     cursor: pointer;
-    text-shadow: 0px 0px 5px rgba(18, 23, 28, 0.24);
-    transition: 0.3s;
 }
 
 @media (max-width: 900px) {
@@ -174,6 +194,8 @@ header {
     display: none;
 }
 
+/* Hero section */
+
 .hero-container {
     max-width: 1300px;
     display: flex;
@@ -187,7 +209,7 @@ header {
     .hero-container {
         flex-flow: column;
         justify-content: center;
-        margin-top: 1rem;
+        margin: 1rem auto 0 auto;
     }
 }
 
@@ -212,19 +234,6 @@ header {
     }
 }
 
-.hero-title {
-    font-size: 2.5rem;
-}
-
-@media (max-width: 650px) {
-    .hero-title {
-        margin-top: 1rem;
-        margin-bottom: 0.5rem;
-        text-align: center;
-        font-size: 1.6rem;
-    }
-}
-
 .hero-info .value {
     color: #6680FF;
 }
@@ -242,7 +251,7 @@ header {
     }
 }
 
-.clans-container>.clan {
+.clans-container>.clan-name {
     padding: 0.4rem 0.7rem;
     color: #efefef;
     background-color: #14191e;
@@ -265,13 +274,13 @@ header {
     cursor: pointer;
 }
 
-.hero-gif {
+.hero-video {
     width: 600px;
     flex: 1;
 }
 
 @media (max-width: 650px) {
-    .hero-gif {
+    .hero-video {
         width: auto;
     }
 }
@@ -283,6 +292,8 @@ video {
     border-radius: 0.3rem;
     box-shadow: 0px 0px 8px 0px rgba(5, 5, 5, 0.3);
 }
+
+/* Main section */
 
 .main-container {
     max-width: 1300px;
@@ -304,16 +315,12 @@ video {
     justify-content: center;
 }
 
-.features-title {
-    margin: 4rem auto 2rem auto;
-}
-
 .founder-name {
     color: #6680FF;
 }
 
 .features-container {
-    padding: 1rem 2rem 2rem 2rem;
+    padding: 0.5rem 2rem 1.5rem 2rem;
     background-image: linear-gradient(to right, rgba(9, 23, 28, 0.85), rgba(18, 23, 28, 0.85)), url(images/features-background.webp);
     background-size: cover;
     background-position: center;
@@ -323,13 +330,13 @@ video {
 
 @media (max-width: 650px) {
     .features-container {
-        padding: 1rem 1.5rem 2rem 1.5rem;
+        padding: 0.5 1.5rem 1.5rem 1.5rem;
     }
 }
 
 .features-description {
     margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     color: #6680FF;
 }
 
@@ -338,11 +345,6 @@ video {
     flex-flow: column;
     gap: 0.7rem;
     padding-left: 1rem;
-}
-
-.rules-title h2 {
-    margin: 4rem auto 2rem auto;
-    text-align: center;
 }
 
 .rules-container {
@@ -356,7 +358,9 @@ video {
     }
 }
 
-.server-regulations {
+.server-regulations,
+.clan-regulations {
+    height: 100%;
     flex: 1;
     padding: 2rem;
     background-image: linear-gradient(to right, rgba(18, 23, 28, 0.85), rgba(18, 23, 28, 0.85)), url(images/server-regulations-background.webp);
@@ -366,16 +370,36 @@ video {
     box-shadow: 0px 0px 8px 0px rgba(5, 5, 5, 0.3);
 }
 
+.clan-regulations {
+    background-image: linear-gradient(to right, rgba(18, 23, 28, 0.85), rgba(18, 23, 28, 0.85)), url(images/clan-regulations-background.webp);
+}
+
 @media (max-width: 650px) {
-    .server-regulations {
+
+    .server-regulations,
+    .clan-regulations {
         padding: 2rem 1.5rem;
     }
 }
 
-.server-regulations-title {
-    margin: 0.5rem auto 0.8rem auto;
-    text-align: center;
-    color: #6680FF;
+.server-regulations-olist,
+.clan-regulations-olist,
+.server-regulations-sublist,
+.clan-regulations-sublist {
+    display: flex;
+    flex-flow: column;
+    gap: 0.7rem;
+    padding: 1rem;
+}
+
+.server-regulations-sublist {
+    list-style-type: none;
+}
+
+.clan-regulations-sublist {
+    margin-top: 0.7rem;
+    padding: 0 0 0 1.2rem;
+    list-style-type: upper-latin;
 }
 
 .discord-icon {
@@ -384,64 +408,13 @@ video {
     margin: auto;
 }
 
-.server-regulations-olist {
-    display: flex;
-    flex-flow: column;
-    gap: 0.7rem;
-    padding: 1rem;
-}
-
-.server-regulations-ulist {
-    display: flex;
-    flex-flow: column;
-    gap: 0.7rem;
-    padding: 1rem;
-}
-
-.clan-regulations {
-    height: 100%;
-    flex: 1;
-    padding: 2rem;
-    background-image: linear-gradient(to right, rgba(18, 23, 28, 0.85), rgba(18, 23, 28, 0.85)), url(images/clan-regulations-background.webp);
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0px 0px 8px 0px rgba(5, 5, 5, 0.3);
-    border-radius: 0.3rem;
-}
-
-@media (max-width: 650px) {
-    .clan-regulations {
-        padding: 2rem 1.5rem;
-    }
-}
-
-.clan-regulations-title {
-    margin: 0.5rem auto 0.8rem auto;
-    text-align: center;
-    color: #6680FF;
-}
-
 .wolf-icon {
     display: block;
     margin: auto;
     max-width: 100%;
 }
 
-.clan-regulations-olist {
-    display: flex;
-    flex-flow: column;
-    gap: 0.7rem;
-    padding: 1rem;
-}
-
-.clan-regulations-sublist {
-    display: flex;
-    flex-flow: column;
-    gap: 0.7rem;
-    margin-top: 0.7rem;
-    padding-left: 1.2rem;
-    list-style-type: upper-latin;
-}
+/* Footer section */
 
 .footer-container {
     margin-top: 1rem;
@@ -466,15 +439,10 @@ video {
     margin-bottom: 1rem;
 }
 
-.icons-container a {
-    text-shadow: 0px 0px 5px rgba(18, 23, 28, 0.24);
+.icons-container svg {
+    max-width: 100%;
 }
 
 .icons-container a:hover {
-
     cursor: pointer;
-}
-
-.icons-container a svg {
-    max-width: 100%;
 }
