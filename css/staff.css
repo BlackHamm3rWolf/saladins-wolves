@@ -1,0 +1,89 @@
+.staff-title {
+    margin: 2rem auto 3rem auto;
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media (max-width: 650px) {
+    .staff-title {
+        margin: 3rem auto 2rem auto;
+    }
+}
+
+.main-container {
+    max-width: 1300px;
+    display: flex;
+    flex-flow: column;
+    gap: 3rem;
+    margin: 0 auto 3rem auto;
+    padding: 0 1rem;
+}
+
+.cofounder-container,
+.admin-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+@media (max-width: 650px) {
+
+    .cofounder-container,
+    .admin-container {
+        flex-flow: column;
+    }
+}
+
+.founder,
+.co-founder,
+.admin {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin: auto;
+    padding: 1.5rem 0rem 0rem 0rem;
+    border-radius: 0.3rem;
+    box-shadow: 0px 0px 8px 0px rgba(5, 5, 5, 0.3);
+    background-color: #4C57D1;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%233d46a7' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%232e347d' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%231e2354' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%230f112a' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23000000' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
+}
+
+@media (max-width: 650px) {
+
+    .founder,
+    .co-founder,
+    .admin {
+        width: 100%;
+    }
+}
+
+.staff-avatar img {
+    width: 150px;
+}
+
+.staff-info {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    gap: 0.4rem;
+    padding: 1rem;
+    border-radius: 0 0 0.3rem 0.3rem;
+    background-color: rgba(20, 25, 30, 0.8);
+}
+
+.staff-info p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.staff-info .bio {
+    margin-top: 0.5rem;
+}
+
+.staff-info .name {
+    color: #6680FF;
+}
