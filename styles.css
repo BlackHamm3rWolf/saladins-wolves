@@ -35,7 +35,7 @@ h4 {
 
 header {
     height: 100vh;
-    background-image: linear-gradient(to right, rgba(10, 15, 17, 0.85), rgba(10, 15, 17, 0.85)), url(images/hero-wallpaper2.jpg);
+    background-image: linear-gradient(to right, rgba(10, 15, 17, 0.85), rgba(10, 15, 17, 0.85)), url(images/hero-wallpaper.webp);
     background-size: cover;
     background-position: center;
 }
