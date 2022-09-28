@@ -1,32 +1,32 @@
 .staff-title {
-    margin: 2rem auto 3rem auto;
+    margin: 2rem auto 2rem auto;
     font-size: 2rem;
     text-align: center;
-}
-
-@media (max-width: 650px) {
-    .staff-title {
-        margin: 3rem auto 2rem auto;
-    }
 }
 
 .main-container {
     max-width: 1300px;
     display: flex;
     flex-flow: column;
-    gap: 3rem;
-    margin: 0 auto 3rem auto;
-    padding: 0 1rem;
+    gap: 2rem;
+    margin: 0 auto 2rem auto;
+    padding: 0 2rem;
+}
+
+@media (max-width: 900px) {
+    .main-container {
+        padding: 0 1rem;
+    }
 }
 
 .cofounder-container,
 .admin-container {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 900px) {
 
     .cofounder-container,
     .admin-container {
@@ -40,11 +40,9 @@
     flex: 1;
     display: flex;
     flex-flow: column;
-    justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    margin: auto;
-    padding: 1.5rem 0rem 0rem 0rem;
+    padding-top: 1.5rem;
     border-radius: 0.3rem;
     box-shadow: 0px 0px 8px 0px rgba(5, 5, 5, 0.3);
     background-color: #4C57D1;
@@ -52,7 +50,7 @@
     background-size: cover;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 900px) {
 
     .founder,
     .co-founder,

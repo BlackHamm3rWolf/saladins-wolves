@@ -18,17 +18,16 @@ header {
     font-size: 2.4rem;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1300px) {
     .hero-title {
-        margin-top: 1rem;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 }
 
 .features-title,
 .rules-title {
-    margin: 4rem auto 2rem auto;
+    margin: 4rem auto 2.5rem auto;
 }
 
 .rules-title {
@@ -57,11 +56,11 @@ header {
     .hero-container {
         flex-flow: column;
         justify-content: center;
-        margin: 1rem auto 0 auto;
+        margin: 2rem auto 0 auto;
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 650px) {
     .hero-container {
         padding: 0 1rem;
     }
@@ -147,13 +146,13 @@ video {
     max-width: 1300px;
     display: flex;
     flex-flow: column;
-    margin: auto auto 2rem auto;
-    padding: 1.5rem 2rem;
+    margin: 1.5rem auto 2rem auto;
+    padding: 0 2rem;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 900px) {
     .main-container {
-        padding: 1.5rem 1rem;
+        padding: 0 1rem;
     }
 }
 
@@ -176,9 +175,9 @@ video {
     border-radius: 0.3rem;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 900px) {
     .features-container {
-        padding: 0.5 1.5rem 1.5rem 1.5rem;
+        padding: 0.5rem 1.5rem 1.5rem 1.5rem;
     }
 }
 
@@ -222,7 +221,7 @@ video {
     background-image: linear-gradient(to right, rgba(18, 23, 28, 0.85), rgba(18, 23, 28, 0.85)), url(../images/clan-regulations-background.webp);
 }
 
-@media (max-width: 650px) {
+@media (max-width: 900px) {
 
     .server-regulations,
     .clan-regulations {
