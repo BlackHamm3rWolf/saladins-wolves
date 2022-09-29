@@ -1,7 +1,8 @@
 .staff-title {
-    margin: 2rem auto 2rem auto;
-    font-size: 2rem;
+    margin: 2rem auto 3rem auto;
     text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .main-container {
@@ -60,7 +61,10 @@
 }
 
 .staff-avatar img {
-    width: 150px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid rgba(20, 25, 30, 0.8);
 }
 
 .staff-info {
@@ -80,6 +84,7 @@
 
 .staff-info .bio {
     margin-top: 0.5rem;
+    font-size: 1rem;
 }
 
 .staff-info .name {
