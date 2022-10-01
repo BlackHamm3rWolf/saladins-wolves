@@ -20,6 +20,9 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
     line-height: 1.4;
     background-color: #14191e;
     color: #efefef;
