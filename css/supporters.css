@@ -4,3 +4,10 @@
     font-weight: bold;
     font-size: 2rem;
 }
+
+.kofi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}

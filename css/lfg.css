@@ -1,6 +1,6 @@
-.coming-soon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 8rem auto;
+.coming-soon h1 {
+    margin: 2rem auto 3rem auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
 }
