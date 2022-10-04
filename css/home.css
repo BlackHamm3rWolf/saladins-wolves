@@ -1,15 +1,15 @@
-@media (max-width: 1300px) {
-    header {
-        height: 100%;
-        padding-bottom: 1rem;
-    }
-}
-
 header {
     height: 100vh;
     background-image: linear-gradient(to right, rgba(10, 15, 17, 0.85), rgba(10, 15, 17, 0.85)), url(../images/hero-wallpaper.webp);
     background-size: cover;
     background-position: center;
+}
+
+@media (max-width: 1300px) {
+    header {
+        height: 100%;
+        padding-bottom: 1rem;
+    }
 }
 
 /* Titles and headers */
@@ -26,9 +26,26 @@ header {
     }
 }
 
+.discord-widget-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 5rem auto 3rem auto;
+}
+
+.discord-word {
+    color: #6680FF;
+}
+
+
 .features-title,
 .rules-title {
     margin: 5rem auto 3rem auto;
+}
+
+.founder-name {
+    font-weight: bold;
+    color: #6680FF;
 }
 
 .rules-title {
@@ -160,7 +177,7 @@ video {
     max-width: 1300px;
     display: flex;
     flex-flow: column;
-    margin: 1.5rem auto 2rem auto;
+    margin: 0 auto 2rem auto;
     padding: 0 2rem;
 }
 
@@ -174,11 +191,7 @@ video {
     width: auto;
     display: flex;
     justify-content: center;
-}
-
-.founder-name {
-    font-weight: bold;
-    color: #6680FF;
+    box-shadow: 0px 0px 8px 0px rgba(5, 5, 5, 0.3);
 }
 
 .features-container {
