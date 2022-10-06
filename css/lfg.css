@@ -1,6 +1,104 @@
-.coming-soon h1 {
+.lfg-title {
     margin: 2rem auto 3rem auto;
+    font-size: 2rem;
     text-align: center;
     font-weight: bold;
+}
+
+.main-container {
+    max-width: 1300px;
+    margin: 0 auto 2rem auto;
+    padding: 0 2rem;
+}
+
+@media (max-width: 900px) {
+    .main-container {
+        padding: 0 1rem;
+    }
+}
+
+.activities-container {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+.activities-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.activity {
+    width: 150px;
+}
+
+.activity p {
+    text-align: center;
+    padding: 0.4rem 0.7rem;
+    color: #efefef;
+    border-radius: 0.3rem;
+    border: 1px solid #efefef;
+}
+
+.mentors-title {
+    margin: 5rem auto 0 auto;
     font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.slash {
+    color: #6680FF;
+}
+
+.mentors-description {
+    margin: 0.5rem auto 3rem auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.mentors-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+}
+
+.mentor-card {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+    border-radius: 0.3rem;
+    box-shadow: 0px 0px 8px 0px rgba(5, 5, 5, 0.3);
+    background-image: radial-gradient(circle, #353d8e, #3c469d, #4250ac, #495abb, #4f64cb);
+}
+
+.mentor-avatar img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid rgba(20, 25, 30, 0.8);
+}
+
+.mentor-info {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    gap: 0.4rem;
+    padding: 1rem 0 1rem 0;
+    border-radius: 0 0 0.3rem 0.3rem;
+    background-color: rgba(20, 25, 30, 0.9);
+}
+
+.mentor-info {
+    text-align: center;
+}
+
+.mentor-name {
+    font-size: 1.2rem;
+    color: #6680ff;
 }
