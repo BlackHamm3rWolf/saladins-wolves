@@ -153,12 +153,24 @@ h4 {
 
 /* Footer section */
 
+footer {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+@media (max-width: 900px) {
+    footer {
+        padding: 0 1rem;
+    }
+}
+
 .footer-container {
-    margin-top: 1rem;
-    padding-top: 2rem;
-    padding-bottom: 1.5rem;
+    margin: 3rem auto 0 auto;
+    padding: 2rem 2rem 1.5rem 2rem;
     text-align: center;
-    border-top: 0.5px solid #efefef;
+    border-top: 2px solid #efefef;
+    text-shadow: 0px 0px 5px rgba(18, 23, 28, 0.24);
 }
 
 @media (max-width: 650px) {
