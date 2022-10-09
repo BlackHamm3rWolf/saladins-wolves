@@ -33,7 +33,7 @@
 .activity {
     width: 150px;
     border-radius: 0.3rem;
-    border: 1px solid #efefef;
+    border: 2px solid #efefef;
 }
 
 .activity p {
@@ -54,9 +54,8 @@
 }
 
 .mentors-description {
-    margin: 0.5rem auto 3rem auto;
+    margin: 1rem auto 3rem auto;
     text-align: center;
-    font-weight: bold;
     font-size: 1.1rem;
 }
 

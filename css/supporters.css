@@ -1,13 +1,90 @@
-.coming-soon h1 {
-    margin: 2rem auto 3rem auto;
+.support-title {
+    margin: 2rem auto 0rem auto;
+    padding: 0 1rem;
     text-align: center;
     font-weight: bold;
     font-size: 2rem;
+}
+
+.support-description {
+    margin: 1rem auto 3rem auto;
+    padding: 0 1rem;
+    text-align: center;
+    font-size: 1.1rem;
 }
 
 .kofi {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3rem;
+}
+
+.supporters-title {
+    margin: 5rem auto 3rem auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.slash {
+    color: #6680FF;
+}
+
+.supporters-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+}
+
+@media (max-width: 900px) {
+    .supporters-container {
+        padding: 0 1rem;
+    }
+}
+
+.supporter {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+    border-radius: 0.3rem;
+    background-image: linear-gradient(27deg, #d16ba5, #cc6ab5, #c26cc6, #b270d8, #9a76e9, #7973df, #576ed3, #3069c5, #145699, #0f426d, #142d44, #14191e);
+    background-size: 600% 600%;
+    animation: GradientBackground 5s ease-in-out infinite;
+    box-shadow: 0px 0px 8px 0px rgba(5, 5, 5, 0.3);
+}
+
+@keyframes GradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.supporter svg {
+    width: 150px;
+}
+
+.supporter p {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    gap: 0.4rem;
+    padding: 2rem 0 2rem 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0 0 0.3rem 0.3rem;
+    background-color: rgba(20, 25, 30, 0.9);
 }
